@@ -1,15 +1,15 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Dr. Sumita Majhi",
+    "email": "sumita.m0602@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://sumitamajhi.github.io/",
+    "summary": "Completed PhD from IITG",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Kolkata",
+      "countryCode": "INDIA",
       "region": ""
     },
     "profiles": [
