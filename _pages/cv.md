@@ -9,25 +9,3 @@ redirect_from:
 
 {% Download my full CV [here](/files/CV.pdf) %}
 
-Education
-
-
-Work experience
-
-  
-Skills
-
-
-Publications
-
-  
-Talks
-======
- 
-Teaching
-======
- 
-  
-Service and leadership
-======
-
