@@ -1,47 +1,227 @@
-# Site Settings
-title: "Dr. Sumita Majhi"
-title_separator: "-"
-name: &name "Sumita Majhi"
-description: &description "PhD in CSE from IITG"
-url: https://sumitamajhi.github.io
-baseurl: ""
-repository: "sumitamajhi/sumitamajhi.github.io"
+# Basic Site Settings
+locale          : "en-US"
+site_theme      : "default"
+title           : "Dr. Sumita Majhi"
+title_separator : "-"
+name            : &name "Sumita Majhi"
+description     : &description "PhD in CSE from IITG"
+url             : https://sumitamajhi.github.io
+baseurl         : ""
+repository      : "sumitamajhi/sumitamajhi.github.io"
 
-# Site Author - This appears in the sidebar
+# Site Author (sidebar info)
 author:
-  name: "Sumita Majhi"
-  avatar: "images/profile.jpg"
-  bio: "PhD in CSE from IITG"
-  location: "Guwahati, India"
-  employer:
-  pubmed:
-  googlescholar: "https://scholar.google.com/citations?user=COuTdNkAAAAJ&hl=en&oi=ao"
-  email: "sumit176101013@iitg.ac.in"
-  researchgate:
-  uri:
-  bitbucket:
-  codepen:
-  dribbble:
-  flickr:
-  facebook:
-  foursquare:
-  github: "sumitamajhi"
-  google_plus:
-  keybase:
-  instagram:
-  impactstory:
-  lastfm:
-  linkedin: "sumita123.87"
-  orcid: "https://orcid.org/0000-0001-7364-8615"
-  pinterest:
-  soundcloud:
-  stackoverflow:
-  steam:
-  tumblr:
-  twitter: "https://x.com/sumitamajhi11"
-  vine:
-  weibo:
-  xing:
-  youtube:
-  wikipedia:
-Update personal information
+  avatar        : "images/profile.jpg"
+  name          : "Dr. Sumita Majhi"
+  pronouns      :
+  bio           : "PhD in CSE from IIT Guwahati"
+  location      : "Guwahati, India"
+  employer      : "IIT Guwahati"
+  uri           :
+  email         : "sumit176101013@iitg.ac.in"
+
+  googlescholar : "https://scholar.google.com/citations?user=COuTdNkAAAAJ&hl=en&oi=ao"
+  orcid         : "https://orcid.org/0000-0001-7364-8615"
+  pubmed        :
+  researchgate  :
+  github        : "sumitamajhi"
+  linkedin      : "sumita123.87"
+  twitter       : "https://x.com/sumitamajhi11"
+  facebook      :
+  instagram     :
+
+# Publication categories (customize as needed)
+publication_category:
+  books:
+    title: 'Books'
+  manuscripts:
+    title: 'Journal Articles'
+  conferences:
+    title: 'Conference Papers'
+
+# Site Settings
+teaser          :
+breadcrumbs     : false
+words_per_minute: 160
+future          : true
+read_more       : "disabled"
+talkmap_link    : false
+
+comments:
+  provider: false
+
+atom_feed:
+  hide: false
+
+# SEO
+google_site_verification:
+bing_site_verification:
+alexa_site_verification:
+yandex_site_verification:
+
+# Social sharing & analytics
+twitter:
+  username: "sumitamajhi11" # Your X/Twitter username (without URL)
+facebook:
+  username:
+
+analytics:
+  provider: false
+
+# Directories to include/exclude
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - Capfile
+  - config
+  - Dockerfile
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - Rakefile
+  - README
+  - tmp
+  - vendor
+
+keep_files:
+  - .git
+  - .svn
+
+encoding         : "utf-8"
+markdown_ext     : "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown         : kramdown
+highlighter      : rouge
+lsi              : false
+excerpt_separator: "\n\n"
+incremental      : false
+
+# Markdown Processing
+kramdown:
+  input         : GFM
+  hard_wrap     : false
+  auto_ids      : true
+  footnote_nr   : 1
+  entity_output : as_char
+  toc_levels    : 1..6
+  smart_quotes  : lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+collections:
+  teaching:
+    output    : true
+    permalink : /:collection/:path/
+  publications:
+    output    : true
+    permalink : /:collection/:path/
+  portfolio:
+    output    : true
+    permalink : /:collection/:path/
+  talks:
+    output    : true
+    permalink : /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: /:categories/:title/
+timezone : Etc/UTC
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
