@@ -1,10 +1,10 @@
 {
-  "name": "academic-pages",
+  "name": "sumitamajhi",
   "version": "0.8.1.1",
   "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "https://github.com/sumitamajhi/sumitamajhi.github.io"
   },
   "keywords": [
     "jekyll",
@@ -12,14 +12,14 @@
     "minimal"
   ],
   "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
+    "Sumita Majhi",
+    
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
+    "url": "https://github.com/sumitamajhi/sumitamajhi.github.io/issues"
   },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://github.com/sumitamajhi/sumitamajhi.github.io",
   "engines": {
     "node": ">= 0.10.0"
   },
