@@ -10,7 +10,7 @@ repository: "sumitamajhi/sumitamajhi.github.io"
 # Site Author - This appears in the sidebar
 author:
   name: "Sumita Majhi"
-  avatar: "profile.png"
+  avatar: "images/profile.jpg"
   bio: "PhD in CSE from IITG"
   location: "Guwahati, India"
   employer:
