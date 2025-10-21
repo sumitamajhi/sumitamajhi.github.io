@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: 'This paper is about Multi-objective Optimization.'
-date: 2009-10-01
+date: june, 2022
 venue: 'Journal 1'
 paperurl: 'https://www.researchgate.net/publication/373664673_Multi-objective_Optimization_in_NOMA-IoT_Networks'
 citation: 'Majhi, Sumita, and Pinaki Mitra. "Multi-objective Optimization in NOMA-IoT Networks." North-East Research Conclave. Singapore: Springer Nature Singapore, 2022. 75-88.'
