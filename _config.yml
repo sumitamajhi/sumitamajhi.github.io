@@ -5,12 +5,12 @@ name: &name "Sumita Majhi"
 description: &description "PhD in CSE from IITG"
 url: https://sumitamajhi.github.io
 baseurl: ""
-repository: "sumitamajhi/sumitamajhi.github.io"
+repository: "sumitamajhi/sumitamajhi.github.io/master"
 
 # Site Author - This appears in the sidebar
 author:
   name: "Sumita Majhi"
-  avatar: "images/profile.jpg"
+  avatar: "master/images/profile.jpg"
   bio: "PhD in CSE from IITG"
   location: "Guwahati, India"
   employer:
