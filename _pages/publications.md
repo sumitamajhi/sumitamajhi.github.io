@@ -1,7 +1,7 @@
 ---
 title: "Publications"
 permalink: /publications/
-author_profile: true
+
 ---
 
 A comprehensive list of my research work. Preprints and source code are available on request.
