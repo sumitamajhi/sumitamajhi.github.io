@@ -1,43 +1,51 @@
----
----
+/* Navigation styles */
+.greedy-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.greedy-nav li {
+  position: relative;
+}
+.greedy-nav li a {
+  display: block;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: #222;
+  transition: background 0.2s, color 0.2s;
+}
+.greedy-nav li.active > a,
+.greedy-nav li a:hover,
+.greedy-nav li.active > .dropbtn {
+  background: #268bd2;
+  color: #fff;
+  border-radius: 4px;
+}
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
-
-@import
-    "vendor/breakpoint/breakpoint",
-
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
-    "include/mixins",
-    "vendor/susy/susy",
-
-    "layout/reset",
-    "layout/base",
-
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  min-width: 160px;
+  background: #f9f9f9;
+  z-index: 200;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.dropdown-content li a {
+  padding: 10px 16px;
+  color: #333;
+  background: none;
+}
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+.dropdown-content li.active > a, .dropdown-content li a:hover {
+  background: #268bd2;
+  color: #fff;
+}
+.greedy-nav .dropdown > a:after, .greedy-nav .dropbtn:after {
+  content: " ▼";
+  font-size: 11px;
+}
