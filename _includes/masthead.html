@@ -1,11 +1,23 @@
-<!-- Masthead (Top Navigation Bar) -->
 <header class="masthead">
   <nav class="greedy-nav">
     <ul>
       {% for link in site.data.navigation.main %}
-        <li>
-          <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
-        </li>
+        {% if link.children %}
+          <li class="dropdown{% if page.url == link.url %} active{% endif %}">
+            <a href="#" class="dropbtn">{{ link.title }}</a>
+            <ul class="dropdown-content">
+              {% for child in link.children %}
+                <li{% if page.url == child.url %} class="active"{% endif %}>
+                  <a href="{{ child.url | prepend: site.baseurl }}">{{ child.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% else %}
+          <li{% if page.url == link.url or page.url == link.url | append: "/" %} class="active"{% endif %}>
+            <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </nav>
