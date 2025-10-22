@@ -22,7 +22,6 @@
   color: #fff;
   border-radius: 4px;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -48,4 +47,45 @@
 .greedy-nav .dropdown > a:after, .greedy-nav .dropbtn:after {
   content: " ▼";
   font-size: 11px;
+}
+
+/* Sidebar and profile card */
+.author__profile {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 30px 20px 16px 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.author__avatar img {
+  border-radius: 50%;
+  width: 110px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.10);
+  margin-bottom: 14px;
+}
+.author__links a {
+  display: inline-block;
+  margin: 0 6px;
+  font-size: 22px;
+  color: #268bd2;
+  transition: color 0.2s;
+}
+.author__links a:hover {
+  color: #005889;
+}
+.author__name {
+  margin-top: 0.5em;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+.author__bio {
+  margin: 1em 0 0.5em 0;
+  font-size: 1.05em;
+  color: #444;
+}
+.author__location {
+  margin-bottom: 1em;
+  color: #777;
+  font-size: 0.98em;
 }
