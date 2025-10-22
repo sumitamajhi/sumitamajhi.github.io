@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    ...
+    <!-- Put your meta tags, title, styles here (omit ... in your real file) -->
+    {{ site.head }}
   </head>
   <body>
     {% include masthead.html %}
@@ -10,7 +11,7 @@
         {% include sidebar.html %}
       </aside>
       <main>
-        {{ content }} <!-- No sidebar/author-profile here -->
+        {{ content }}
       </main>
     </div>
     {% include footer.html %}
