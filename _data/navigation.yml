@@ -14,5 +14,13 @@ main:
   - title: "Teaching & Mentoring"
     url: /teaching/
 
-  - title: "Contact"
-    url: /contact/
+  - title: "More"
+    children:
+      - title: "Blog"
+        url: /blog/
+      - title: "Awards"
+        url: /awards/
+      - title: "Talks"
+        url: /talks/
+      - title: "Contact"
+        url: /contact/
