@@ -1,19 +1,18 @@
-# The following is the order of the links in the header of the website.
 main:
   - title: "Home"
     url: /
 
-  - title: "About"
-    url: /about/
+  - title: "Research"
+    url: /research/
 
   - title: "Publications"
     url: /publications/
 
-  - title: "Teaching"
-    url: /teaching/
-
   - title: "CV"
     url: /cv/
+
+  - title: "Teaching & Mentoring"
+    url: /teaching/
 
   - title: "Contact"
     url: /contact/
