@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Dr. Sumita Majhi"
-author_profile: false
+
 ---
 I am a researcher and Ph.D. in Computer Science and Engineering from the Indian Institute of Technology Guwahati. My research is at the forefront of next-generation wireless networks, specializing in the application of advanced AI/ML—including Reinforcement Learning, Deep Learning, and Transformer models—to solve complex challenges in 5G/6G systems. My work focuses on pioneering algorithms for interference management, intelligent channel estimation, and resource optimization in NOMA networks to enhance spectral efficiency, mobility resilience, and green communication.
 
