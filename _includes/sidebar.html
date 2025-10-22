@@ -1,15 +1,1 @@
-<div class="sidebar">
-  {% include author-profile.html %}
-
-  <nav class="site-nav">
-    <ul>
-      {% for link in site.data.navigation.main %}
-        <li>
-          <a href="{{ link.url | prepend: site.baseurl }}">
-            {{ link.title }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-</div>
+{% include author-profile.html %}
