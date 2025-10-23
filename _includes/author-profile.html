@@ -1,7 +1,10 @@
 <div class="author__profile">
   {% if site.author.avatar %}
-    <img class="author__avatar" src="{{ site.baseurl }}/{{ site.author.avatar }}" alt="{{ site.author.name }}'s Profile Picture">
-  {% endif %}
+  <div class="author__avatar">
+    <img src="{{ site.baseurl }}/{{ site.author.avatar }}" alt="{{ site.author.name }}'s Profile Picture">
+  </div>
+{% endif %}
+
 
   <div class="author__meta">
     <h3 class="author__name">{{ site.author.name }}</h3>
