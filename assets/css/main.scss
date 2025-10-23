@@ -60,10 +60,13 @@
 }
 .author__avatar img {
   border-radius: 50%;
-  width: 110px;
+  width: 64px;          /* Small size for profile photo */
+  height: 64px;
   box-shadow: 0 0 8px rgba(0,0,0,0.10);
   margin-bottom: 14px;
+  object-fit: cover;
 }
+
 .author__links a {
   display: inline-block;
   margin: 0 6px;
