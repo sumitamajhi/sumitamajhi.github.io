@@ -1,2 +1,26 @@
 {% include author-profile.html %}
 
+<nav class="sidebar-nav">
+  <ul>
+    {% for link in site.data.navigation.main %}
+      {% if link.children %}
+        <li class="dropdown">
+          <span class="dropbtn">{{ link.title }}</span>
+          <ul class="dropdown-content">
+            {% for child in link.children %}
+              <li>
+                <a href="{{ child.url | prepend: site.baseurl }}">{{ child.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
+
+
