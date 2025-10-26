@@ -1,38 +1,24 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jekyll'
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 4.3.2"
+gem "jekyll-archives"
+gem "jekyll-paginate"
+gem "jekyll-scholar"
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
+gem "jekyll-include-cache"
+gem "jekyll-algolia"
+gem "jemoji"
+gem "webrick"
 
-# Core plugins that directly affect site building
-group :jekyll_plugins do
-    gem 'jekyll-archives-v2'
-    gem 'jekyll-email-protect'
-    gem 'jekyll-feed'
-    gem 'jekyll-get-json'
-    gem 'jekyll-imagemagick'
-    gem 'jekyll-jupyter-notebook'
-    gem 'jekyll-link-attributes'
-    gem 'jekyll-minifier'
-    gem 'jekyll-paginate-v2'
-    gem 'jekyll-regex-replace'
-    gem 'jekyll-scholar'
-    gem 'jekyll-sitemap'
-    gem 'jekyll-tabs'
-    gem 'jekyll-terser', :git => "https://github.com/RobertoJBeltran/jekyll-terser.git"
-    gem 'jekyll-toc'
-    gem 'jekyll-twitter-plugin'
-    gem 'jemoji'
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-    gem 'classifier-reborn'  # used for content categorization during the build
-end
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1.1" if Gem.win_platform?
 
-# Gems for development or external data fetching (outside :jekyll_plugins)
-group :other_plugins do
-    gem 'css_parser'
-    gem 'feedjira'
-    gem 'httparty'
-    gem 'observer'       # used by jekyll-scholar
-    gem 'ostruct'        # used by jekyll-twitter-plugin
-    # gem 'terser'         # used by jekyll-terser
-    # gem 'unicode_utils' -- should be already installed by jekyll
-    # gem 'webrick' -- should be already installed by jekyll
+group :test do
+  gem "html-proofer"
 end
