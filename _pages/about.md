@@ -1,8 +1,9 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: /about/  # ← Change this from "/" to "/about/"
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+
 
 profile:
   align: right
