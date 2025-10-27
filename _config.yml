@@ -1,7 +1,6 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-
 title: Dr. Sumita Majhi
 first_name: Sumita
 middle_name: 
@@ -21,8 +20,12 @@ baseurl: ""
 # -----------------------------------------------------------------------------
 github_username: sumitamajhi
 email: sumit176101013@iitg.ac.in
-linkedin_username:  # Add your LinkedIn username if available
-google_scholar_id:  # Add your Google Scholar ID if available
+
+# -----------------------------------------------------------------------------
+# Build settings
+# -----------------------------------------------------------------------------
+theme: jekyll-theme-minimal
+safe: false
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -35,17 +38,6 @@ search_enabled: true
 # Layout
 # -----------------------------------------------------------------------------
 max_width: 930px
-
-# -----------------------------------------------------------------------------
-# Blog
-# -----------------------------------------------------------------------------
-blog_name: Research Blog
-blog_description: Latest research updates and publications
-permalink: /blog/:year/:title/
-lsi: false
-
-pagination:
-  enabled: true
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -66,13 +58,7 @@ kramdown:
   input: GFM
   syntax_highlighter_opts:
     css_class: "highlight"
-    span:
-      line_numbers: false
-    block:
-      line_numbers: false
-      start_line: 1
 
-# Includes & excludes
 include: ["_pages"]
 exclude:
   - bin/
@@ -86,41 +72,10 @@ plugins:
   - jekyll-seo-tag
 
 # -----------------------------------------------------------------------------
-# Jekyll Scholar
-# -----------------------------------------------------------------------------
-
-
-# -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
 enable_math: true
 enable_darkmode: true
-enable_progressbar: true
-enable_masonry: true
-enable_medium_zoom: true
-
-# -----------------------------------------------------------------------------
-# Sitemap
-# -----------------------------------------------------------------------------
-sass:
-  style: compressed
-
-defaults:
-  - scope:
-      path: "assets"
-    values:
-      sitemap: false
-
-# -----------------------------------------------------------------------------
-# Jekyll Archives
-# -----------------------------------------------------------------------------
-
-
-# -----------------------------------------------------------------------------
-# External services (optional - configure later)
-# -----------------------------------------------------------------------------
-# google_analytics: 
-# disqus_shortname: 
 
 # -----------------------------------------------------------------------------
 # Footer
