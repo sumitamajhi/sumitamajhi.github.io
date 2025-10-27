@@ -88,31 +88,7 @@ plugins:
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
-scholar:
-  style: ieee
-  locale: en
-  source: ./_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  
-  replace_strings: true
-  join_strings: true
-  
-  details_dir: bibliography
-  details_link: Details
-  
-  query: "@*"
-  group_by: year
-  group_order: descending
 
-# Display publication badges
-enable_publication_badges:
-  altmetric: false
-  dimensions: false
-  google_scholar: true
-
-# Maximum authors to show
-max_author_limit: 3
 
 # -----------------------------------------------------------------------------
 # Optional Features
@@ -138,14 +114,7 @@ defaults:
 # -----------------------------------------------------------------------------
 # Jekyll Archives
 # -----------------------------------------------------------------------------
-jekyll-archives:
-  enabled: [year, tags]
-  layouts:
-    year: archive
-    tag: archive
-  permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
+
 
 # -----------------------------------------------------------------------------
 # External services (optional - configure later)
