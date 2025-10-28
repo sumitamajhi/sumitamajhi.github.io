@@ -6,6 +6,7 @@ gem "jekyll-remote-theme"
 gem "jekyll-scholar"
 gem "feedjira"
 gem "httparty"
-gem "active_support"
+gem "active_support", ">= 6.0"
+
 
 
