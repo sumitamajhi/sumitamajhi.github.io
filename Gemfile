@@ -9,6 +9,8 @@ gem "httparty"
 gem "activesupport"
 gem "jekyll-feed"
 gem "jekyll-seo-tag"
+gem "css_parser"
+
 
 
 
