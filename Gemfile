@@ -10,6 +10,8 @@ gem "activesupport"
 gem "jekyll-feed"
 gem "jekyll-seo-tag"
 gem "css_parser"
+gem "kramdown-parser-gfm"
+
 
 
 
