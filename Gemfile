@@ -7,6 +7,8 @@ gem "jekyll-scholar"
 gem "feedjira"
 gem "httparty"
 gem "activesupport"
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
 
 
 
