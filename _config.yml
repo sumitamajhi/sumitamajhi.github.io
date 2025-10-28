@@ -1,16 +1,16 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-title: Dr. Sumita Majhi
-first_name: Sumita
-middle_name: 
-last_name: Majhi
+title: "Dr. Sumita Majhi"
+first_name: "Sumita"
+middle_name: ""  # Don't leave blank, use empty string
+last_name: "Majhi"
 description: >
-  PhD in Computer Science & Engineering from IIT Guwahati. 
+  PhD in Computer Science & Engineering from IIT Guwahati.
   Researcher in 5G/6G Wireless Networks, NOMA, Channel Estimation, and AI/ML for wireless communications.
-keywords: 5G, 6G, NOMA, wireless communications, channel estimation, AI/ML, IIT Guwahati, computer science
+keywords: "5G, 6G, NOMA, wireless communications, channel estimation, AI/ML, IIT Guwahati, computer science"
 lang: en
-icon: ⚡
+icon: "⚡"
 
 url: "https://sumitamajhi.github.io"
 baseurl: ""
@@ -18,13 +18,13 @@ baseurl: ""
 # -----------------------------------------------------------------------------
 # Social profiles
 # -----------------------------------------------------------------------------
-github_username: sumitamajhi
-email: [sumit176101013@iitg.ac.in](mailto:sumit176101013@iitg.ac.in)
+github_username: "sumitamajhi"
+email: "sumit176101013@iitg.ac.in"
 
 # -----------------------------------------------------------------------------
 # Build settings
 # -----------------------------------------------------------------------------
-remote_theme: alshedivat/al-folio
+remote_theme: "alshedivat/al-folio"
 safe: false
 
 # -----------------------------------------------------------------------------
@@ -37,7 +37,7 @@ search_enabled: true
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
-max_width: 930px
+max_width: "930px"
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -59,7 +59,8 @@ kramdown:
   syntax_highlighter_opts:
     css_class: "highlight"
 
-include: ["_pages"]
+include:
+  - _pages
 exclude:
   - bin/
   - Gemfile
