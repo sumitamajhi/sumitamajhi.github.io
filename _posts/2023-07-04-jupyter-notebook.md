@@ -11,7 +11,7 @@ related_posts: false
 
 To include a jupyter notebook in a post, you would normally use a plugin such as the
 [Jekyll Jupyter Notebook plugin](https://github.com/red-data-tools/jekyll-jupyter-notebook).
-However, **GitHub Pages does not support this plugin**, so you cannot use the `{% jupyter_notebook %}` tag here.
+However, **GitHub Pages does not support this plugin**, so you cannot use the tag here.
 
 If you want to share Jupyter content, you can:
 - Export your notebook as HTML and embed code snippets or screenshots.
