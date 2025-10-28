@@ -19,7 +19,7 @@ baseurl: ""
 # Social profiles
 # -----------------------------------------------------------------------------
 github_username: sumitamajhi
-email: sumit176101013@iitg.ac.in
+email: [sumit176101013@iitg.ac.in](mailto:sumit176101013@iitg.ac.in)
 
 # -----------------------------------------------------------------------------
 # Build settings
@@ -66,12 +66,17 @@ exclude:
   - Gemfile.lock
   - vendor
 
-# Plugins
+# Plugins (CRITICAL: these must match your Gemfile)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-scholar
   - jekyll-remote-theme
+
+# Bibliography & Jekyll-Scholar settings (customize as needed)
+scholar:
+  style: apa
+  locale: en
 
 # -----------------------------------------------------------------------------
 # Optional Features
